@@ -286,7 +286,7 @@ Resources:
                     cd /var/www/html
                     echo "TamVN. Thankyou Reviewer" > index.html
             ImageId: ami-09cd747c78a9add63
-            KeyName: vockey
+            KeyName: 
             IamInstanceProfile: !Ref ProfileWithRolesForOurApp
             SecurityGroups:
             -   Ref: WebServerSecGroup
