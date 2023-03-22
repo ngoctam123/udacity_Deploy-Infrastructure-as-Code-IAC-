@@ -225,8 +225,8 @@ Resources:
                     -   s3:Get*
                     -   s3:List*
                     Resource: 
-                    -   arn:aws:s3:::udacity-demo-1
-                    -   arn:aws:s3:::udacity-demo-1/*
+                    -   arn:aws:s3:::my-923754115083-bucket
+                    -   arn:aws:s3:::my-923754115083-bucket/*
             Roles:
             -   Ref: UdacityS3ReadOnlyEC2
 
@@ -284,9 +284,8 @@ Resources:
                     apt-get install apache2 -y
                     systemctl start apache2.service
                     cd /var/www/html
-                    aws s3 cp s3://my-923754115083-bucket/TamVN.zip .
-                    unzip -o TamVN.zip
-            ImageId: ami-02f3f602d23f1659d
+                    echo "TamVN. Thankyou Reviewer" > index.html
+            ImageId: ami-09cd747c78a9add63
             KeyName: vockey
             IamInstanceProfile: !Ref ProfileWithRolesForOurApp
             SecurityGroups:
